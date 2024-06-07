@@ -1,3 +1,4 @@
-Header Main Color: #012530
-Header Background Color: #e3e8ea
-Header Akzent Color: #e08359
+Schriftfarbe: #012530
+Dunkler Hintergrund: #e3e8ea
+Akzent Farbe: #e08359
+Akzent Farbe blass: #ebad92

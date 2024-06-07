@@ -78,7 +78,8 @@ html {
  * Remove the margin in all browsers.
  */
 body {
-	margin: 0;
+	margin: 0 auto;
+	width:80%;
 }
 
 /**
@@ -86,6 +87,9 @@ body {
  */
 main {
 	display: block;
+	width: 60%;
+	margin: 0 30px 0 0;
+	float: left;
 }
 
 /**
@@ -418,6 +422,16 @@ h6 {
 	clear: both;
 }
 
+.loop-title {
+	background-color: #ebad92;
+	line-height: 30px;
+	margin-left: 30px;
+}
+
+.loop-title h1 {
+	position: relative; top: -8px; left: -8px;
+}
+
 p {
 	margin-bottom: 1.5em;
 }
@@ -644,6 +658,9 @@ textarea {
 
 /* DiKopA specific layouts
 --------------------------------------------- */
+header {
+  margin-bottom: 50px;
+}
 .site-header-background {
 	background-image: url("img/site-header.png");
 	background-repeat: no-repeat;
@@ -750,17 +767,20 @@ textarea {
 	position: relative; right: 0; top: 120px;
 }
 
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 1400px) {
 	.main-navigation {
 		bottom: -12px;
-		font-size: 1rem;
+		font-size: 1.2rem;
 	}
 	.main-navigation li {
 		padding-right: 20px;
 	}
+	body {
+		width: 90%;
+	}
 }
 
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 1020px) {
 	.menu-toggle {
 		display: none;
 	}
@@ -770,17 +790,13 @@ textarea {
 }
 
 
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 1020px) {
 	.custom-logo {
 		position: absolute; bottom: -21px;
 		width: 100px;
 	}
-}
-
-@media only screen and (max-width: 500px) {
-	.custom-logo {
-		position: absolute; bottom: -18px;
-		width: 80px;
+	body {
+		width: 100%;
 	}
 }
 
@@ -819,17 +835,71 @@ textarea {
 
 .post,
 .page {
-	margin: 0 0 1.5em;
+	margin: 0 0 1.5em 30px;
+}
+
+article {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #e3e8ea;
+}
+
+.post-thumbnail-container {
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: 33.3%;
+	aspect-ratio: 1/1;
+}
+
+.post-thumbnail-container img {
+	object-fit: cover;
+  width:100%; height: 100%;
+}
+
+.post-entry-container {
+	flex-grow: 1;
+	min-width: 0;
+	margin: 0 20px;
 }
 
 .updated:not(.published) {
 	display: none;
 }
 
+.entry-title, .entry-meta {
+	display: block;
+	width: 100%;
+}
+
+.entry-title {
+	margin: 20px 0 0;
+}
+
+.entry-title a {
+	text-decoration: none;
+	color: #012530;
+	font-size: 24px;
+}
+
+.entry-meta span a {
+	color: #e08359;
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.entry-title a:hover {
+	color: #e08359;
+}
+
 .page-content,
 .entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
+	font-size: 15px;
 }
 
 .page-links {

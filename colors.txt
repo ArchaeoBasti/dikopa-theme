@@ -1,0 +1,3 @@
+Header Main Color: #012530
+Header Background Color: #e3e8ea
+Header Akzent Color: #e08359

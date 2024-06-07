@@ -403,8 +403,9 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	font-size: 1rem;
+	/* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; */
+	font-family: "Garamond", "Georgia", serif;
+	font-size: 1.2rem;
 	line-height: 1.5;
 }
 
@@ -641,6 +642,31 @@ textarea {
 # Layouts
 --------------------------------------------------------------*/
 
+/* DiKopA specific layouts
+--------------------------------------------- */
+.site-header-background {
+	background-image: url("img/site-header.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 100%;
+	height: 0;
+	padding-top: 37.5%; /* (img-height / img-width * container-width) */
+							/* (750 / 2000 * 100) */
+}
+
+.site-branding {
+	background-color: #FFF;
+	height: 3vw;
+	min-height: 50px;
+	position: relative;
+}
+
+.custom-logo {
+	position: absolute; bottom: -45px;
+	margin-left: 3vw;
+	width: 200px;
+}
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -650,13 +676,16 @@ textarea {
 .main-navigation {
 	display: block;
 	width: 100%;
+	position: absolute; bottom: -18px;
+	font-size: 1.5rem;
 }
 
 .main-navigation ul {
 	display: none;
+	float: right;
 	list-style: none;
 	margin: 0;
-	padding-left: 0;
+	padding: 0;
 }
 
 .main-navigation ul ul {
@@ -690,27 +719,68 @@ textarea {
 
 .main-navigation li {
 	position: relative;
+	padding-right: 30px;
 }
 
 .main-navigation a {
 	display: block;
+	font-weight: bold;
 	text-decoration: none;
+	color: #012530;
+}
+
+.main-navigation a:hover {
+	color: #e08359;
 }
 
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
+	text-align: right;
 }
 
-@media screen and (min-width: 37.5em) {
+.menu-toggle {
+	background: transparent; border: 0;
+	font-size: 40px; font-weight: bold;
+	position: absolute; right: -20px; bottom: -25px;
+}
 
+.main-navigation.toggled ul {
+	position: relative; right: 0; top: 120px;
+}
+
+@media only screen and (max-width: 1120px) {
+	.main-navigation {
+		bottom: -12px;
+		font-size: 1rem;
+	}
+	.main-navigation li {
+		padding-right: 20px;
+	}
+}
+
+@media screen and (min-width: 830px) {
 	.menu-toggle {
 		display: none;
 	}
-
 	.main-navigation ul {
 		display: flex;
+	}
+}
+
+
+@media only screen and (max-width: 830px) {
+	.custom-logo {
+		position: absolute; bottom: -21px;
+		width: 100px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.custom-logo {
+		position: absolute; bottom: -18px;
+		width: 80px;
 	}
 }
 

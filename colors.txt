@@ -1,4 +1,5 @@
 Schriftfarbe: #012530
 Dunkler Hintergrund: #e3e8ea
+Dunklerer Hintergrund: #9eafb5
 Akzent Farbe: #e08359
 Akzent Farbe blass: #ebad92

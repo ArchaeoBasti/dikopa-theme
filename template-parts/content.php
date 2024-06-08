@@ -9,9 +9,6 @@
 
 ?>
 
-<div class="loop-title">
-	<h1>What's new?</h1>
-</div>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="post-thumbnail-container">
 		<?php dikopa_theme_post_thumbnail(); ?>
@@ -42,7 +39,7 @@
 
 		<div class="entry-content">
 			<?php
-			the_content(
+			the_excerpt(
 				sprintf(
 					wp_kses(
 						/* translators: %s: Name of current post. Only visible to screen readers */

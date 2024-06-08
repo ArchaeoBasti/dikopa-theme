@@ -92,6 +92,35 @@ main {
 	float: left;
 }
 
+.widget-area {
+	width: 35%;
+	float: left;
+	margin-top: 25px;
+}
+
+.widget_search {
+	background-color: #e3e8ea;
+	padding: 20px;
+	font-size: 24px;
+}
+
+.wp-block-search__inside-wrapper  {
+	border-top: 3px #012530 solid;
+	padding-top: 10px;
+}
+
+.wp-block-search__button {
+	height: 40px; width: 40px;
+	display: block;
+	border-radius: 50%;
+	background-color: #9eafb5;
+}
+
+.search-icon {
+  margin-left: -11px; margin-top: -3px;
+	color: #e08359;
+}
+
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
@@ -842,7 +871,7 @@ article {
 	display: flex;
 	flex: 1;
 	flex-direction: row;
-	flex-wrap: wrap;
+	flex-wrap: no-wrap;
 	justify-content: center;
 	background-color: #e3e8ea;
 }
@@ -899,7 +928,7 @@ article {
 .entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
-	font-size: 15px;
+	font-size: 17px;
 }
 
 .page-links {

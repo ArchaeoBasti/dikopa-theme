@@ -15,8 +15,44 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
 
+	<main id="primary" class="site-main">
+		<?php
+		$args = array(
+		    'post_type' => 'post',
+		    'post_status' => 'future',
+		    'category_name' => 'Vortragsankündigung',
+		);
+		$arr_posts = new WP_Query( $args );
+
+		if ( $arr_posts->have_posts() ) :
+		?>
+			<div class="loop-title">
+				<h1>Vortragsankündigung</h1>
+			</div>
+		<?php
+		    while ( $arr_posts->have_posts() ) :
+		        $arr_posts->the_post();
+
+						/*
+						 * Include the Post-Type-specific template for the content.
+						 * If you want to override this in a child theme, then include a file
+						 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+						 */
+						get_template_part( 'template-parts/content', get_post_type() );
+
+		    endwhile;
+				the_posts_navigation();
+		    wp_reset_postdata();
+
+		endif;
+?>
+
+
+		<?php query_posts('cat=-'.get_cat_ID( "Vortragsankündigung" )); ?>
+		<div class="loop-title">
+			<h1>What's new?</h1>
+		</div>
 		<?php
 		if ( have_posts() ) :
 

@@ -13,6 +13,7 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
+			© DiKopA Projekt <?php echo date("Y"); ?> |
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'dikopa-theme' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */

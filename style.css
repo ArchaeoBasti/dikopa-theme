@@ -98,7 +98,7 @@ main {
 	margin-top: 25px;
 }
 
-.widget_search {
+.widget {
 	background-color: #e3e8ea;
 	padding: 20px;
 	font-size: 24px;
@@ -114,6 +114,16 @@ main {
 	display: block;
 	border-radius: 50%;
 	background-color: #9eafb5;
+}
+
+.widget-title {
+	font-size: 24px; font-weight: normal; line-height: 1.5;
+	margin: 0; margin-bottom: 10px;
+	border-bottom: 3px solid #000;
+}
+
+.wp-block-social-links {
+	margin: 0;
 }
 
 .search-icon {
@@ -1041,6 +1051,13 @@ article {
 
 .gallery-caption {
 	display: block;
+}
+
+.site-footer {
+	clear: both;
+	background-color: #e3e8ea;
+	padding: 10px 20px;
+	margin: 0 30px;
 }
 
 /*--------------------------------------------------------------

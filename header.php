@@ -39,7 +39,7 @@
 				);
 				?>
 			</nav><!-- #site-navigation -->
-			<a class="custom-logo-link" href="" rel="home" aria-current="page">
+			<a class="custom-logo-link" href="<?php echo home_url(); ?>" rel="home" aria-current="page">
 				<img class="custom-logo" src="<?php echo get_template_directory_uri(); ?>/img/site-logo.png" alt="DiKopA Logo" decoding="async">
 			</a>
 			<?php

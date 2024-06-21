@@ -87,13 +87,17 @@ body {
  */
 main {
 	display: block;
-	width: 60%;
-	margin: 0 30px 0 0;
+	width: 68%;
+	margin-right: 2%;
 	float: left;
 }
 
+.page-main {
+	width: 100%;
+}
+
 .widget-area {
-	width: 35%;
+	width: 30%;
 	float: left;
 	margin-top: 25px;
 }
@@ -464,7 +468,6 @@ h6 {
 .loop-title {
 	background-color: #ebad92;
 	line-height: 30px;
-	margin-left: 30px;
 }
 
 .loop-title h1 {
@@ -698,8 +701,9 @@ textarea {
 /* DiKopA specific layouts
 --------------------------------------------- */
 header {
-  margin-bottom: 50px;
+  margin-bottom: 2vw;
 }
+
 .site-header-background {
 	background-image: url("img/site-header.png");
 	background-repeat: no-repeat;
@@ -886,7 +890,7 @@ header {
 }
 
 .post {
-	margin: 0 0 1.5em 30px;
+	margin-bottom: 1.5em;
 }
 
 article {
@@ -914,6 +918,11 @@ article {
 	flex-grow: 1;
 	min-width: 0;
 	margin: 0 20px;
+}
+
+.entry-header {
+	margin: 0 60px;
+
 }
 
 .dikopa-single {
@@ -961,6 +970,10 @@ article {
 	text-decoration: none;
 }
 
+.dikopa-single .entry-meta span a {
+	font-size: 18px;
+}
+
 .entry-title a:hover {
 	color: #e08359;
 }
@@ -978,7 +991,7 @@ article {
 .entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
-	font-size: 17px;
+	font-size: 18px;
 }
 
 .page-links {
@@ -1097,7 +1110,6 @@ article {
 	clear: both;
 	background-color: #e3e8ea;
 	padding: 10px 20px;
-	margin: 0 30px;
 }
 
 /*--------------------------------------------------------------

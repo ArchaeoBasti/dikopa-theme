@@ -841,20 +841,30 @@ header {
 	body {
 		width: 100%;
 	}
+	.loop-title h1 {
+		left: 8px;
+	}
 }
 
 @media only screen and (max-width: 850px) {
 	main {
 		width: 100%;
 		margin: 0;
-		padding-right: 30px;
+		padding: 0;
 	}
 	.widget-area {
 		width: 100%;
 		float: left;
-		padding: 0 30px;
+		padding: 0;
 	}
 }
+
+@media only screen and (max-width: 640px) {
+	.post-thumbnail-container {
+		display: none;
+	}
+}
+
 
 .site-main .comment-navigation,
 .site-main

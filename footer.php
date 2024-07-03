@@ -13,13 +13,19 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
+			<nav id="footer-navigation" class="footer-navigation">
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-2',
+						'menu_id'        => 'footer-menu',
+					)
+				);
+				?>
+			</nav><!-- #site-navigation -->
+
+			<span class="sep"> | </span>
 			© DiKopA Projekt <?php echo date("Y"); ?>
-			<span class="sep"> | </span>
-			Kontakt
-			<span class="sep"> | </span>
-			Impressum
-			<span class="sep"> | </span>
-			Datenschutzbestimmungen
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

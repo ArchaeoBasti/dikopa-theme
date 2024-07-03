@@ -794,6 +794,35 @@ header {
 	color: #e08359;
 }
 
+.footer-navigation {
+	display: block;
+	float: left;
+}
+
+.footer-navigation ul {
+	display: block;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-navigation li {
+	position: relative;
+	float: left;
+	padding-right: 15px;
+}
+
+.footer-navigation a {
+	display: block;
+	text-decoration: none;
+	color: #012530;
+}
+
+.footer-navigation a:hover {
+	color: #e08359;
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -932,7 +961,7 @@ article {
 }
 
 .entry-header, .entry-content, .entry-footer {
-	margin: 0 60px;
+
 }
 
 .dikopa-single {

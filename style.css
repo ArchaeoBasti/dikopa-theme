@@ -79,7 +79,8 @@ html {
  */
 body {
 	margin: 0 auto;
-	width:80%;
+	width: 80%;
+	max-width: 1600px;
 }
 
 /**
@@ -1242,6 +1243,11 @@ article {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 1.5em;
+}
+
+.wp-block-columns {
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 /* Make YouTube videos inserted via WordPress oEmbed full-width */

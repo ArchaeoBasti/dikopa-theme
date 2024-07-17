@@ -90,6 +90,7 @@ main {
 	display: block;
 	width: 68%;
 	margin-right: 2%;
+	margin-bottom: 1.5em;
 	float: left;
 }
 
@@ -470,6 +471,10 @@ h6 {
 .loop-title {
 	background-color: #ebad92;
 	line-height: 30px;
+}
+
+.loop-title-bottom {
+	border-bottom: 20px solid #FFF;
 }
 
 .loop-title h1 {
@@ -959,10 +964,6 @@ article {
 	flex-grow: 1;
 	min-width: 0;
 	margin: 0 20px;
-}
-
-.entry-header, .entry-content, .entry-footer {
-
 }
 
 .dikopa-single {

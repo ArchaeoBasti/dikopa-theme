@@ -19,7 +19,7 @@ get_header();
 		<?php
 		$args = array(
 		    'post_type' => 'post',
-		    'post_status' => 'published',
+		    'post_status' => 'publish',
 		    'category_name' => 'Vortragsankündigung',
 		);
 		$arr_posts = new WP_Query( $args );

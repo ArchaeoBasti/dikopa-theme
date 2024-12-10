@@ -27,7 +27,7 @@ get_header();
 		if ( $arr_posts->have_posts() ) :
 		?>
 			<div class="loop-title">
-				<h1>Vergangene und anstehende Veranstaltungen</h1>
+				<h1>Vergangene Veranstaltungen</h1>
 			</div>
 		<?php
 		    while ( $arr_posts->have_posts() ) :

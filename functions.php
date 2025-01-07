@@ -199,3 +199,17 @@ function wpdocs_excerpt_more( $more ) {
 	return $more;
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
+add_filter('the_posts', 'show_future_posts');
+
+function show_future_posts($posts)
+{
+   global $wp_query, $wpdb;
+
+   if(is_single() && $wp_query->post_count == 0)
+   {
+      $posts = $wpdb->get_results($wp_query->request);
+   }
+
+   return $posts;
+}

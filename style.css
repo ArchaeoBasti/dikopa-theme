@@ -533,6 +533,37 @@ big {
 	font-size: 125%;
 }
 
+.HackathonH2 {
+	text-transform: uppercase;
+  overflow: hidden;
+  text-align: center;
+}
+
+.HackathonH2::before,
+.HackathonH2::after {
+  background-color: #d57f54;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.HackathonH2::before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.HackathonH2::after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.p-no-space {
+  margin-bottom: 2px;
+}
+
 /* Elements
 --------------------------------------------- */
 body {
